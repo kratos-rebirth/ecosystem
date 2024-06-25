@@ -1,0 +1,81 @@
+search:
+  includes:
+    - post
+    - page
+
+image:
+  favicon: "/assets/favicon.png"
+  avatar: "https://dev.krt.moe/demo-assets/logo.webp"
+  banner:
+    light: "https://dev.krt.moe/demo-assets/banner.webp"
+    dark: "https://dev.krt.moe/demo-assets/banner_dark.webp"
+  background:
+    light: "https://dev.krt.moe/demo-assets/bg.webp"
+    dark: "https://dev.krt.moe/demo-assets/bg.webp"
+
+nav:
+  items:
+    - label: 首页
+      icon: home
+      url: /
+    - label: 评论
+      icon: comments
+      url: /categories/评论/
+    - label: 访问统计
+      icon: star
+      url: /categories/访问统计/
+    - label: 工具挂件
+      icon: music
+      url: /categories/工具挂件/
+    - label: 站点特效
+      icon: snowflake-o
+      url: /categories/站点特效/
+    - label: 其他
+      icon: plug
+      url: /categories/其他/
+    - label: 其他链接
+      icon: link
+      float_right: true
+      submenu:
+        - label: 主题仓库
+          url: https://github.com/Candinya/Kratos-Rebirth
+        - label: 主题文档
+          url: https://wiki.krt.moe
+        - label: 实例列表
+          url: https://awesome.krt.moe
+
+footer:
+  links:
+    - icon: github
+      link: https://github.com/kratos-rebirth/wiki
+    - icon: rss
+      link: /atom.xml
+  components:
+    uptime:
+      since: "2024-06-23 00:08:16"
+    additional:
+      - - 由 <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a> 强力驱动
+        - 在 <a href="https://github.io" target="_blank">Github Pages</a> 暖心托管
+
+sidebar:
+  widgets:
+    - about
+    - splitter
+    - toc
+    - category
+    - tagcloud
+    - posts
+
+share:
+  title: "分享内容"
+  message: "扫描此处的二维码即可分享。"
+
+donate:
+  enable: false
+
+inactive_notice:
+  enable: false
+
+copyright_notice:
+  append_copy:
+    enable: false
