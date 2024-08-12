@@ -54,7 +54,8 @@ Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。
       }
       const path = container.getAttribute("data-path");
       const gitalk = new Gitalk(Object.assign({
-          id: path,
+          id: path, // 直接使用路径作为 id
+          // id: container.getAttribute("data-path-hash"), // 使用 hash 作为 ID
           path: path,
       }, {
         clientID: '<GitHub Application Client ID>',
@@ -82,6 +83,8 @@ Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。
 - `<存储评论使用的 issue 的仓库名称>` 和 `<存储评论使用的 issue 的仓库所属>` 需要替换成您用于存储评论时需要使用的仓库对应的名称。例如对于 `Candinya/Kratos-Rebirth` 来说，仓库名称是 `Kratos-Rebirth` ，仓库所属是 `Candinya` 。
 - `<管理员账户的 GitHub 用户名>` 需要设置成管理员的 GitHub 用户名，可以添加多个。只有这个列表里的用户可以初始化评论区。
 
+目前已知当文章路径过长时，使用 id 创建 issue 可能会失败。您可以使用数据摘要来作为文章的 ID ，对应调整注释行的代码即可（注释掉第 12 行，解除第 13 行的注释）。
+
 ### 更新的配置项
 
 需要更新 `comments` ，**设置为**以下内容：
@@ -93,7 +96,7 @@ comments:
       - post
       - page
     template:
-      _shared: <div id="gitalk-container" class="kr-comments lazy-load" data-path="$PATH"></div>
+      _shared: <div id="gitalk-container" class="kr-comments lazy-load" data-path="$PATH" data-path-hash="$PATH_HASH"></div>
 ```
 
 需要更新 `additional_injections` ，**加入**以下内容：
