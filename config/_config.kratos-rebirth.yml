@@ -49,7 +49,7 @@ nav:
 footer:
   links:
     - icon: github
-      link: https://github.com/kratos-rebirth/wiki
+      link: https://github.com/kratos-rebirth/ecosystem
     - icon: rss
       link: /atom.xml
   components:
