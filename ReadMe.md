@@ -10,7 +10,7 @@
 4. 站点特效 `effect`
 5. 其他 `other`
 
-- 文章路径：`sources/_posts` 目录下
+- 文章路径：`source/_posts` 目录下
 - 文件命名：`对应分类的英文-新增支持的项目名称（小写）.md`
   - 例如对下雪特效的支持： `effect-snow.md`
 - 文章元信息 (Front Matter)：
