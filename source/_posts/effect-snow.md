@@ -32,7 +32,6 @@ Use at your own risk.
   height: 100%;
   z-index: 99999;
   pointer-events: none;
-  background: rgba(225, 225, 225, .05);
 }
 ```
 
