@@ -10,6 +10,9 @@ toc: false
 
 # 用于 Kratos-Rebirth 的独立 LaTeX 数学公式渲染插件
 
+> **项目地址**：[https://github.com/TsumugiWenders/Kratos-Rebirth-Latex-Fix](https://github.com/TsumugiWenders/Kratos-Rebirth-Latex-Fix)
+> **在线演示**：[https://blog.nekopara.net/自然科学/latex-test/](https://blog.nekopara.net/自然科学/latex-test/)
+
 ## 接入博客工作流
 
 在现有 GitHub Actions 工作流的 steps 下增加：
