@@ -6,6 +6,8 @@ tags:
 #sticky:
 #cover:
 toc: false
+excerpt: "用于 Kratos-Rebirth 的独立 LaTeX 数学公式渲染插件"
+author: TsumugiWenders
 ---
 
 # 用于 Kratos-Rebirth 的独立 LaTeX 数学公式渲染插件
